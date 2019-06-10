@@ -199,14 +199,14 @@ describe('MessageProcessor', () => {
 
     await messageProcessor._subcribeWatchman(config, mockWatchmanClient);
   });
-  
+
   it('getQueryAndRange finds queries in tagged templates', async () => {
     const text = `
 // @flow
 import {gql} from 'react-apollo';
 import type {B} from 'B';
 import A from './A';
- 
+
 const QUERY = gql\`
 query Test {
   test {
